@@ -6,4 +6,4 @@ app.get("/", (req, res) => {
   res.send("Hello")
 })
 
-app.listen(8080)
+app.listen(Number(process.env.PORT || 80))
